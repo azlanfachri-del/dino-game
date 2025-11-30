@@ -30,6 +30,10 @@ document.addEventListener("keydown", (e) => {
             dino.dy = dino.jumpForce;
             dino.grounded = false;
         }
+        // Kontrol untuk HP (tap layar)
+document.addEventListener("touchstart", function(){
+    lompat();
+});
 
         if (gameOver) restart();
     }
